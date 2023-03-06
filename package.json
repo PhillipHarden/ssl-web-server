@@ -1,0 +1,16 @@
+{
+  "name": "ssl-web-server",
+  "version": "1.0.0",
+  "description": "ssl web server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "htp": "^0.13.0",
+    "jquery": "^3.6.3"
+  }
+}
