@@ -16,6 +16,8 @@ http.createServer(function(req, res){
     // Parses the file path from the requested URL using the path.parse() method
     let filename = path.parse(parsed.pathname);
     // Extracts the file name from the parsed file path, defaulting to "index" if no file name is specified
+    // the "?" is a ternary operator, which is used as a shorthand for an if-else statement.
+    // This line reads as: "f the filename.name is an empty string "", then set the file_name variable to "index". Otherwise, set file_name to filename.name.
     let file_name = filename.name==""?"index":filename.name;
     // Extracts the file extension from the parsed file path, defaulting to ".html" if no extension is specified
     let ext = filename.ext==""?".html":filename.ext;
