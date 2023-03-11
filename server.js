@@ -24,6 +24,7 @@ http.createServer(function(req, res){
     // Extracts the directory path from the parsed file path, defaulting to an empty string if no directory path is specified
     let dir = filename.dir=="/"?"":filename.dir+"/";
     // Sets the page to be served, defaulting to "index.html" if no page is specified
+    // This is the variable that I will use in the html files to change the color of my navigation links
     let page = filename.name==""?"index.html":filename.name;
     // Constructs the full file path by concatenating the directory path, file name, and file extension, and removes any leading slashes
     f = (dir+file_name+ext).replace("/","");
@@ -48,7 +49,6 @@ http.createServer(function(req, res){
                     // Sets the response header with the appropriate MIME type for the requested file extension
                     res.writeHead(200, {'Content-Type': 'mimeTypes.'+ext});
                     // Writes a script tag to the response that sets a JavaScript variable named "page" to the requested file name
-                    // This is the variable that I will use in the html files to change the color of my navigation links
                     res.write("<script>let page=`" + file_name + "`;</script>");
                     // Sends the file data as the response body, with the UTF-8 character encoding
                     res.end(data, 'utf-8');
