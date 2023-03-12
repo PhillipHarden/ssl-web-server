@@ -101,7 +101,7 @@ In simpler terms, when a user submits data via a form or sends data through an H
 
 
 
-
+Open terminal, cd to the directory of choice, then command line "nodemon app.js -L" to start server.
 
 
 
