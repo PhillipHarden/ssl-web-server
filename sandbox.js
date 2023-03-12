@@ -14,3 +14,4 @@ app.get("/", function (req, res) {
 //^ start the server by using the previous instructions.
 //? This line starts the server and tells it to listen for incoming requests on port 3000. The second argument is a callback function that will be called once the server has started listening for requests. In this example, the function is empty, so it doesn't do anything. However, you could use this callback function to log a message or perform other setup tasks. The server variable is used to keep a reference to the server instance, which can be useful for stopping the server later on.
 var server = app.listen(3000, function () {});
+
